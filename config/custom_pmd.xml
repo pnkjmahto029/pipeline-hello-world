@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<ruleset name="Custom ruleset"
+  xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+  <description>
+    custom pmd rules. It also includes default pmd ruleset bestpractices rules 
+  </description>
+
+
+  <rule ref="category/java/bestpractices.xml" />  
+
+  <rule name="SuppressedWarning" language="java"
+    message="Consider removing suppression for compiler warning"
+    class="net.sourceforge.pmd.lang.rule.XPathRule">
+    <description>
+      This rule checks for any suppression for compiler warning
+    </description>
+    <priority>1</priority>
+    <properties>
+      <property name="xpath">
+        <value>
+            <![CDATA[
+            //Annotation/SingleMemberAnnotation/Name[@Image = "SuppressWarnings"] | //Annotation/NormalAnnotation/Name[@Image = "SuppressWarnings"]
+            ]]>
+        </value>
+      </property>
+    </properties>
+  </rule>
+</ruleset>
