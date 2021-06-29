@@ -23,16 +23,10 @@ Please download & install Maven 3.8 from [here](https://maven.apache.org/downloa
 
 
 ```sh
-git clone git@github.com:dsvellal/shift-left-quality-sample.git
+git clone git@github.com:dsvellal/pipeline-hello-world.git
 ```
 
-2. Change to hello-world-feature-branch
-
-```sh
-git checkout quality-at-desk
-```
-
-3. Run the project
+2. Run the project
 
 ```sh
 mvn clean install
