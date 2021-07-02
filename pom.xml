@@ -15,8 +15,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>11</java.version>
-		<jacoco.line.coverage>1.0</jacoco.line.coverage>
-		<jacoco.branch.coverage>1.0</jacoco.branch.coverage>
+		<jacoco.line.coverage>0.4</jacoco.line.coverage>
+		<jacoco.branch.coverage>0.4</jacoco.branch.coverage>
 		<jacoco.missed.class.count>0</jacoco.missed.class.count>
 		<mutation.threshold>100</mutation.threshold>
 		<method.cyclomatic.complexity.count>3</method.cyclomatic.complexity.count>
